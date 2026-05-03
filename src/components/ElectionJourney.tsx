@@ -13,7 +13,8 @@ const steps = [
       'Must be 18 years old on the qualifying date (Jan 1st, April 1st, July 1st, or Oct 1st).',
       'Must be an ordinary resident of the constituency.',
       'Documents: Aadhar/Age proof, Address proof, and Photograph.'
-    ]
+    ],
+    link: 'https://voters.eci.gov.in/'
   },
   {
     id: 2,
@@ -37,7 +38,8 @@ const steps = [
       'EPIC is a secure document with a unique 10-digit alphanumeric code.',
       'e-EPIC is a non-editable PDF that can be stored on your phone.',
       'Used as primary identity at the polling station.'
-    ]
+    ],
+    link: 'https://voters.eci.gov.in/download-epic'
   },
   {
     id: 4,
@@ -49,7 +51,8 @@ const steps = [
       'Identify yourself to the Polling Officer using EPIC or 12 alternative IDs (Aadhar, PAN, etc.).',
       'Your name is checked against the marked copy of the Electoral Roll.',
       'Strict security provided by Central Armed Police Forces (CAPF) in many areas.'
-    ]
+    ],
+    link: 'https://electoralsearch.eci.gov.in/'
   },
   {
     id: 5,
@@ -73,7 +76,8 @@ const steps = [
       'Postal ballots for service voters are counted first.',
       'VVPAT slips are randomly matched with EVM counts for 5 booths per constituency.',
       'The Returning Officer (RO) declares the final winner and issues the Certificate.'
-    ]
+    ],
+    link: 'https://results.eci.gov.in/'
   }
 ]
 
@@ -157,7 +161,11 @@ const ElectionJourney = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <button className="brutal-btn-primary flex-1">Official Portal</button>
+                  {selectedStep.link && (
+                    <a href={selectedStep.link} target="_blank" rel="noopener noreferrer" className="brutal-btn-primary flex-1 text-center">
+                      Official Portal
+                    </a>
+                  )}
                   <button className="brutal-btn flex-1" onClick={() => setSelectedStep(null)}>Close</button>
                 </div>
               </div>
