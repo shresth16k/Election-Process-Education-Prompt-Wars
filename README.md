@@ -14,9 +14,9 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-%23FF6B35?style=for-the-badge&logoColor=white)](https://github.com/harshshirke66/Election-Process-Education)
+[![Live Demo](https://img.shields.io/badge/LIVE%20DEMO-%23FF6B35?style=for-the-badge&logoColor=white)](https://github.com/shresth16k/Election-Process-Education-Prompt-Wars)
 [![MIT License](https://img.shields.io/badge/MIT%20LICENSE-%2300C896?style=for-the-badge)](./LICENSE)
-[![Report Bug](https://img.shields.io/badge/REPORT%20BUG-%23FF3366?style=for-the-badge)](https://github.com/harshshirke66/Election-Process-Education/issues)
+[![Report Bug](https://img.shields.io/badge/REPORT%20BUG-%23FF3366?style=for-the-badge)](https://github.com/shresth16k/Election-Process-Education-Prompt-Wars/issues)
 
 <br/>
 
@@ -71,7 +71,7 @@ Lucide React             →  Consistent, tree-shakeable SVG icon set
 **1. Clone & install**
 
 ```bash
-git clone https://github.com/harshshirke66/Election-Process-Education.git
+git clone https://github.com/shresth16k/Election-Process-Education-Prompt-Wars.git
 cd Election-Process-Education
 npm install
 ```
@@ -126,6 +126,6 @@ src/
 
 <br/>
 
-[Issues](https://github.com/harshshirke66/Election-Process-Education/issues) · [Discussions](https://github.com/harshshirke66/Election-Process-Education/discussions) · [Pull Requests](https://github.com/harshshirke66/Election-Process-Education/pulls)
+[Issues](https://github.com/shresth16k/Election-Process-Education-Prompt-Wars/issues) · [Discussions](https://github.com/shresth16k/Election-Process-Education-Prompt-Wars/discussions) · [Pull Requests](https://github.com/shresth16k/Election-Process-Education-Prompt-Wars/pulls)
 
 </div>

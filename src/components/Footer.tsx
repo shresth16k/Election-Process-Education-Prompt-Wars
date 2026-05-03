@@ -1,16 +1,31 @@
 import { Globe, MessageSquare, Mail, Vote } from 'lucide-react'
+import { useState } from 'react'
 
 const Footer = () => {
+  const [clickCount, setClickCount] = useState(0)
+
+  const handleTitleClick = () => {
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+    if (newCount === 5) {
+      alert("🎉 You found an easter egg! Built by Shresth Kesarwani 🎉");
+      setClickCount(0);
+    }
+  }
+
   return (
     <footer className="bg-white border-t-8 border-black pt-12 pb-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 cursor-pointer select-none" onClick={handleTitleClick}>
               <div className="bg-brutalist-blue p-2 border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                 <Vote className="text-white w-6 h-6" />
               </div>
-              <span className="font-black text-2xl tracking-tighter uppercase">E-Process Ed</span>
+              <span className="font-black text-2xl tracking-tighter uppercase relative group">
+                E-Process Ed
+                <span className="absolute -bottom-6 left-0 text-[10px] text-transparent group-hover:text-gray-200 transition-colors pointer-events-none">Shresth Kesarwani</span>
+              </span>
             </div>
             <p className="font-bold max-w-sm text-lg">
               Empowering citizens through education. Making the democratic process transparent, accessible, and simple for everyone.
